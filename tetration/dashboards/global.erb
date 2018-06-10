@@ -1,0 +1,84 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [280, 200]
+});
+</script>
+<center><div style="font-size: 20px"> Operator Application Dashboard: Tetration + ACI </div></center>
+<div class="gridster">
+	<ul>
+                <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+                         <div data-id="synergy_avg_app_latency" data-view="Hotness" data-title="App Latency" data-cool="3" data-warm="4"></div>
+                </li>
+                <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+                         <div data-id="synergy_avg_net_latency" data-view="Hotness" data-title="Net Latency" data-cool="0" data-warm="1"></div>
+                </li>
+
+                <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+                         <div data-id="synergy_retransmits" data-view="Hotness" data-title="Pkt Retransmits" data-cool="2" data-warm="10"></div>
+                </li>
+                <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+                         <div data-id="synergy_flows" data-view="Hotness" data-title="Flow Count" data-cool="20000" data-warm="20000"></div>
+                </li>
+
+
+
+		<li data-row="2" data-col="1" data-sizex="1" data-sizey="3">
+                         <div data-id="fabric_health" data-view="List" data-unordered="true" data-title="Fabrics health" data-moreinfo="Healthscore of each fabric" style="background-color: #23819C"></div>
+                </li>
+		<li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+			<div data-id="srtt_avg" data-view="Graph" data-title="Avg. SRTT in ms" data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+		<li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+			<div data-id="srtt_max" data-view="Graph" data-title="Max. SRTT in ms" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+
+		<li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+			<div data-id="net_latency_avg" data-view="Graph" data-title="Avg. Est. Net Latency in ms" data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+		<li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+			<div data-id="net_latency_max" data-view="Graph" data-title="Max. Est. Net Latency in ms" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+
+		<li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+			<div data-id="syn_count" data-view="Graph" data-title="SYN Count" data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+		<li data-row="3" data-col="4" data-sizex="1" data-sizey="1">
+			<div data-id="rst_count" data-view="Graph" data-title="RST Count" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+
+		<li data-row="2" data-col="5" data-sizex="1" data-sizey="1">
+			<div data-id="packets" data-view="Graph" data-title="Packets Count" data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+		<li data-row="3" data-col="5" data-sizex="1" data-sizey="1">
+			<div data-id="retransmits" data-view="Graph" data-title="Retransmitted packets Count" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+
+		<li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+			<div data-id="handshake_avg" data-view="Graph" data-title="Avg. TCP handshake duration in ms" data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+		<li data-row="5" data-col="2" data-sizex="1" data-sizey="1">
+			<div data-id="handshake_max" data-view="Graph" data-title="Max. TCP handshake duration in ms" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+
+		<li data-row="4" data-col="3" data-sizex="1" data-sizey="1">
+			<div data-id="app_latency_avg" data-view="Graph" data-title="Avg. App. Latency in sec." data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+		<li data-row="5" data-col="3" data-sizex="1" data-sizey="1">
+			<div data-id="app_latency_max" data-view="Graph" data-title="Max. App. Latency in sec." data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+
+		<li data-row="4" data-col="4" data-sizex="2" data-sizey="1">
+			<div data-id="obs_count" data-view="Graph" data-title="Observed Flows" data-suffix="" style="background-color:#1e489e"></div>
+		</li>
+
+		<li data-row="5" data-col="4" data-sizex="1" data-sizey="1">
+			<div data-id="app_const_obs" data-view="Graph" data-title="Application Constrained Flows" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+		<li data-row="5" data-col="5" data-sizex="1" data-sizey="1">
+			<div data-id="net_const_obs" data-view="Graph" data-title="Network Constrained Flows" data-suffix="" style="background-color:#9e461d"></div>
+		</li>
+		<li data-row="2" data-col="6" data-sizex="1" data-sizey="3">
+                         <div data-id="epgs_health" data-view="List" data-unordered="true" data-title="App EPGs health" data-moreinfo="Healthscore of EPGs used by this App" style="background-color: #23819C"></div>
+                </li>
+	</ul>
+</div>

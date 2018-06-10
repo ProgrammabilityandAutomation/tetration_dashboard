@@ -1,0 +1,57 @@
+Pre-requisites:
+
+curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+curl -L get.rvm.io | bash -s stable
+source /etc/profile.d/rvm.sh
+rvm reload
+rvm requirements run
+rvm install 2.4.1
+
+yum install nodejs
+
+yum install ntp
+	Make sure it is sync’d to the TA cluster
+yum install gem
+
+## INSTALL RUBY/SMASHING
+
+# Install bundler
+$ gem install bundler
+# Install smashing
+$ gem install smashing
+
+
+See https://github.com/Smashing/smashing for more details if required
+
+
+## Not required for Tetration Dashbaords
+
+# Create a new project
+# $ smashing new my-project
+# Change Directory into the project
+# $ cd my-project
+# Install the bundle of project specific gems
+# $ bundle
+# Start the example dashboard!
+# $ smashing start
+
+
+## CLONE THE TETEATION DAHSBOARD GIT REPOSITORY
+$ git clone ""
+
+# Download and update Tetration API credentials from the desired Tetration cluster
+{
+"api_key": "[api key]",
+"api_secret": "[api secret]"
+}
+
+# Update 'tetration.txt' to reflect desired Tetration cluster
+[TA]
+API_ENDPOINT 	= https://[cluster_url]
+API_CREDENTIALS = credentials.json
+
+# Start the example Tetration dashboard!
+$ smashing start
+
+# Navigate to the DASHBOARD
+http://[ip_address]:3030/tetration

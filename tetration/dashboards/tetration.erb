@@ -1,0 +1,43 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [375, 395]
+  Dashing.numColumns = 3
+});
+</script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript"> google.load("visualization", "1", {packages:["corechart"]});</script>
+
+<% content_for :title do %>Tetration Dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sensors" data-view="Graph" data-title="Software Sensors" data-moreinfo="Number of software Sensors" style="background-color:#26a69a"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="switches" data-view="Number" data-title="Hardware Sensors" data-moreinfo="Number of hardware sensors" style="background-color:#2222ff"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="scopes" data-view="Number" data-title="User Defined Scopes" data-moreinfo="Number of ser created scopes" style="background-color:#66bb6a"></div>
+    </li>
+
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="filters" data-view="Number" data-title="User Defined Filters" data-moreinfo="Number of configured Filters" style="background-color:#3f51b5"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="applications" data-view="Number" data-title="Workspaces Created" data-moreinfo="Number of deployed ADMs" style="background-color:#C5860F"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="annotations" data-view="Number" data-title="User Defined Annotations" data-moreinfo="Number of user defined tags" style="background-color:#607d8b"></div>
+    </li>
+
+  </ul>
+  <center><div style="font-size: 16px"> Tetration Dashboard </div></center>
+</div>

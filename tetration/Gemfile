@@ -1,0 +1,7 @@
+source 'http://rubygems.org'
+
+gem 'smashing'
+
+## Remove this if you don't need a twitter widget.
+gem 'nokogiri'
+gem 'httpclient'
